@@ -10,13 +10,13 @@ metadata:
 spec:
   releaseName: podinfo-dev
   chart:
-    git: git@github.com:melvinlee/helm-operator-get-started
+    git: git@github.com:fluxcd/helm-operator-get-started
     path: charts/podinfo
     ref: master
   values:
     image:
-      repository: stefanprodan/podinfo
-      tag: dev-hdtwcel9
-    replicaCount: 1
+      repository: nginx
+      tag: latest
+    replicaCount: 2
     hpa:
       enabled: false
