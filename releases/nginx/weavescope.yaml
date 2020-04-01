@@ -4,9 +4,6 @@ kind: HelmRelease
 metadata:
   name: nginx
   namespace: nginx
-  annotations:
-    fluxcd.io/automated: "true"
-    filter.fluxcd.io/chart-image: glob:dev-*
 spec:
   releaseName: nginx
   chart:
