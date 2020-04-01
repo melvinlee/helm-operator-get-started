@@ -2,13 +2,13 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: podinfo-dev
-  namespace: dev
+  name: nginx
+  namespace: nginx
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: glob:dev-*
 spec:
-  releaseName: podinfo-dev
+  releaseName: nginx
   chart:
     git: git@github.com:helm/charts
     path: stable/nginx-ingress
