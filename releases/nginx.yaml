@@ -1,17 +1,13 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: nginx-ingress
-  namespace: ingress-nginx
+  name: mysql
+  namespace: mysql
   annotations:
     fluxcd.io/ignore: "false"
 spec:
-  releaseName: nginx-ingress
+  releaseName: mysql
   chart:
     repository: https://kubernetes-charts.storage.googleapis.com/
-    name: nginx-ingress
-    version: 1.33.4
-  values:
-    controller:
-      service:
-        type: LoadBalancer
+    name: mysql 
+    version: 1.6.2
