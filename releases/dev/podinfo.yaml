@@ -2,7 +2,7 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: podinfo-dev
+  name: nginx-dev
   namespace: dev
   annotations:
     fluxcd.io/automated: "true"
