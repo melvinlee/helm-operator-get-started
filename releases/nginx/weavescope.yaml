@@ -12,4 +12,7 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: nginx-ingress
     version: 1.33.4
-
+  values:
+      controller:
+        service:
+          type: LoadBalancer
