@@ -9,6 +9,7 @@ metadata:
 spec:
   releaseName: nginx
   chart:
-    git: git@github.com:helm/charts
-    path: stable/nginx-ingress
-    ref: master
+    repository: https://kubernetes-charts.storage.googleapis.com/
+    name: stable/nginx-ingress
+    version: 1.29.2
+
