@@ -1,0 +1,13 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: oauth2
+  namespace: oauth2
+  annotations:
+    fluxcd.io/ignore: "false"
+spec:
+  releaseName: oauth2
+  chart:
+    git: git@github.com:helm/charts
+    path: stable/oauth2-proxy
+    ref: master
